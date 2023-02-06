@@ -52,10 +52,28 @@
            .contact-details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
   }
   
   .person {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .person {
+      width: 100%;
+    }
+  }
+         
+           .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .detail_text {
     width: 30%;
     text-align: center;
     margin: 10px;
