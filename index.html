@@ -48,6 +48,24 @@
         font-weight: bold;
         cursor: pointer;
       }
+         
+           .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .person {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .person {
+      width: 100%;
+    }
+  }
     </style>
           
           
@@ -63,22 +81,7 @@
  <div>
  <iframe class="airtable-embed" src="https://airtable.com/embed/shrEam6VTf2fqq17Q?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
  </div>
-<h2 class="a">Kontakt</h2>
 
-<table style="width:66%">
-  <tr>
-    <td>
-Henry Mertens<br>
-henry.mertens@hs-anhalt.de<br>
-<br>
-Termine auf Anfrage</td>
-        <td>
-Martin Wiesner<br>
-martin.wiesner@hs-anhalt.de<br>
-<br>
-Termine auf Anfrage</td>
-  </tr>
-</table>
         
     <br><br>
     <button id="form-btn">Zum Formular</button>
@@ -112,6 +115,23 @@ Du möchtest etwas entleihen, dann nimm Kontakt mit uns auf und registriere dich
 </td>
   </tr>
 </table>
+         
+<div class="contact-details">
+     <h2 class="a">Kontakt</h2>
+  <div class="person">
+    <h3>Henry Mertens</h3>
+    <p>henry.mertens@hs-anhalt.de<br>
+<br>
+Termine auf Anfrage</p>
+  </div>
+  <div class="person">
+    <h3>Martin Wiesner</h3>
+    <p>martin.wiesner@hs-anhalt.de</p>
+  </div>
+  </div>         
+         
+
+
          
          <!-- JavaScript -->
 <script>
