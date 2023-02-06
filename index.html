@@ -11,21 +11,28 @@
       }
    
                /* Modal-Container */
-      .modal {
-        display: none;
-           position: absolute;
-            left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-        z-index: 1;
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        background-color: white;
-        padding: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        border-radius: 10px;
-      }
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 85%;
+    height: 85%;
+  }
+}
 
       /* Modal-Header */
       .modal-header {
