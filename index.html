@@ -9,7 +9,40 @@
       * {
         font-family: 'Montserrat', sans-serif;
       }
+   
+               /* Modal-Container */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+      }
+
+      /* Modal-Header */
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      /* Modal-Close-Button */
+      .close {
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
     </style>
+          
+          
   </head>
 
     
@@ -40,8 +73,24 @@ Termine auf Anfrage</td>
   </tr>
 </table>
         
-            <br><br>
-    <a href="register.html"><button>Zur Registrierung</button></a>
+    <br><br>
+    <button id="form-btn">Zum Formular</button>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Formular</h2>
+        <span class="close">&times;</span>
+      </div>
+      <!-- Modal-Inhalt -->
+      <p>Modal-Inhalt hier einfügen</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Holen Sie sich den Button
+      var formBtn = document
+         </script>
         
 <table style="width:100%">
   <tr>
