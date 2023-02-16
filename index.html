@@ -50,9 +50,17 @@ body {
   .modal {
     width: 85%;
     height: 85%;
+    padding: 10px;
   }
 }
 
+/* Für größere Bildschirme */
+@media (min-width: 601px) {
+  body {
+    padding: 30px;
+  }
+}       
+        
 /* Styling for the modal header */
 .modal-header {
   position: sticky; /* Stick the modal header to the top of the modal */
