@@ -10,6 +10,15 @@
         font-family: 'Montserrat', sans-serif;
       }
    
+               /* Added CSS for the fixed header */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+      }
                /* Modal-Container */
 .modal {
     display: none;
@@ -102,7 +111,10 @@
     
     
     <body>
-        <h2>timelab<sup>>></sup></h2>
+    <!-- Added a div to contain the header -->
+    <div class="header">
+      <h2>timelab<sup>>></sup></h2>
+    </div>
         <br>
 <section style="width: 666px;">
         <p>Wir bieten euch zur Durchführung eurer Projekte im Rahmen des Studiums die Möglichkeit Technik für die professionelle Erstellung von 
