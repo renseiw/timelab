@@ -6,23 +6,24 @@
     <title>Timelab Technik</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-      * {
-        font-family: 'Montserrat', sans-serif;
-      }
-   
-               /* Added CSS for the fixed header */
-      .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-        z-index: 1000;
-      }
-               /* Modal-Container */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Added CSS for the fixed header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  z-index: 1000;
+}
+
+/* Modal-Container */
 .modal {
-    display: none;
-     position: absolute;
+  display: none;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,66 +44,75 @@
   }
 }
 
-      /* Modal-Header */
-      .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
+/* Modal-Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-      /* Modal-Close-Button */
-      .close {
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-         
-           .contact-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-  
+/* Modal-Close-Button */
+.close {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.person {
+  width: 30%;
+  text-align: left;
+  margin: 10px;
+}
+
+@media (max-width: 767px) {
   .person {
-    width: 30%;
-    text-align: left;
-    margin: 10px;
+    width: 100%;
   }
-  
-  @media (max-width: 767px) {
-    .person {
-      width: 100%;
-    }
-  }
-         
-           .details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-  
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.detail_text {
+  width: 30%;
+  text-align: left;
+  margin: 10px;
+}
+
+@media (max-width: 767px) {
   .detail_text {
-    width: 30%;
-    text-align: left;
-    margin: 10px;
+    width: 100%;
   }
-  
-  @media (max-width: 767px) {
-    .detail_text {
-      width: 100%;
-    }
+}
+
+#form-btn:hover {
+  background-color: white;
+  color: #0E0C77;
+}
+
+.overview_devices {
+  display: absolute;
+  width: 100%;
+}
+
+/* Added media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  section {
+    max-width: 90%;
+    margin: auto;
   }
-         
-  #form-btn:hover {
-    background-color: white;
-    color: #0E0C77;
-  }
-         
-    .overview_devices {
-    display: absolute;
-         width: 100%;
-  }
+}
+
     </style>
           
           
