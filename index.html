@@ -5,57 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timelab Technik</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
+ 
+   <style>
+/* Set font family for all elements on the page to Montserrat */
 * {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Added CSS for the fixed header */
+/* Styling for the header */
 .header {
-  position: sticky;
+  position: sticky; /* Stick the header to the top of the page */
   top: 0;
   left: 0;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  z-index: 1000;
+  width: 100%; /* Set the width of the header to 100% of the screen */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Add a gradient background that fades to transparent at the bottom */
+  z-index: 1000; /* Set the z-index of the header to 1000 so that it appears above other elements on the page */
 }
 
-/* Modal-Container */
+/* Styling for the modal */
 .modal {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 50%;
-  height: 85%;
-  overflow: auto;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  border-radius: 10px;
+  display: none; /* Hide the modal by default */
+  position: absolute; /* Set the position of the modal to absolute */
+  top: 50%; /* Set the top position of the modal to 50% of the screen */
+  left: 50%; /* Set the left position of the modal to 50% of the screen */
+  transform: translate(-50%, -50%); /* Center the modal vertically and horizontally */
+  z-index: 1; /* Set the z-index of the modal to 1 so that it appears above other elements on the page */
+  width: 50%; /* Set the width of the modal to 50% of the screen */
+  height: 85%; /* Set the height of the modal to 85% of the screen */
+  overflow: auto; /* Add scrollbars to the modal if its contents exceed the height of the screen */
+  background-color: white; /* Set the background color of the modal to white */
+  padding: 20px; /* Add 20 pixels of padding to the content of the modal */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); /* Add a box-shadow to the modal */
+  border-radius: 10px; /* Add rounded corners to the modal */
 }
 
+/* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
+  /* Set the width of the modal to 85% and the height to 85% for screens smaller than 600 pixels */
   .modal {
     width: 85%;
     height: 85%;
   }
 }
 
-/* Modal-Header */
+/* Styling for the modal header */
 .modal-header {
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  z-index: 1001;
+  position: sticky; /* Stick the modal header to the top of the modal */
+  top: 0;
+  display: flex; /* Use flexbox to position the elements in the modal header */
+  justify-content: space-between; /* Spread the elements in the modal header out evenly */
+  align-items: center; /* Vertically align the elements in the modal header */
+  margin-bottom: 20px; /* Add 20 pixels of margin to the bottom of the modal header */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Add a gradient background that fades to transparent at the bottom */
+  z-index: 1001; /* Set the z-index of the modal header to 1001 so that it appears above other elements in the modal */
 }
 
-/* Modal-Close-Button */
+/* Styling for the close button in the modal header */
 .close {
   font-size: 28px;
   font-weight: bold;
