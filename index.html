@@ -57,6 +57,36 @@ body {
   z-index: 1001; /* Set the z-index of the modal header to 1001 so that it appears above other elements in the modal */
 }
 
+        /* Styling for the modal */
+.modal_2 {
+  display: none; /* Hide the modal by default */
+  position: absolute; /* Set the position of the modal to absolute */
+  top: 50%; /* Set the top position of the modal to 50% of the screen */
+  left: 50%; /* Set the left position of the modal to 50% of the screen */
+  transform: translate(-50%, -50%); /* Center the modal vertically and horizontally */
+  z-index: 1; /* Set the z-index of the modal to 1 so that it appears above other elements on the page */
+  width: 50%; /* Set the width of the modal to 50% of the screen */
+  height: 85%; /* Set the height of the modal to 85% of the screen */
+  overflow: auto; /* Add scrollbars to the modal if its contents exceed the height of the screen */
+  background-color: white; /* Set the background color of the modal to white */
+  padding: 20px; /* Add 20 pixels of padding to the content of the modal */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); /* Add a box-shadow to the modal */
+  border-radius: 10px; /* Add rounded corners to the modal */
+}
+
+
+/* Styling for the modal header */
+.modal-header_2 {
+  position: sticky; /* Stick the modal header to the top of the modal */
+  top: 0;
+  display: flex; /* Use flexbox to position the elements in the modal header */
+  justify-content: space-between; /* Spread the elements in the modal header out evenly */
+  align-items: center; /* Vertically align the elements in the modal header */
+  margin-bottom: 20px; /* Add 20 pixels of margin to the bottom of the modal header */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Add a gradient background that fades to transparent at the bottom */
+  z-index: 1001; /* Set the z-index of the modal header to 1001 so that it appears above other elements in the modal */
+}
+
 /* Styling for the close button in the modal header */
 .close {
   font-size: 28px;
@@ -165,7 +195,21 @@ body {
   <div class="detail_text">
     <h3>Nutzungsbedingungen</h3>
     <p>Ausleihberechtigt sind alle Studierenden und Mitarbeitenden der Hochschule Anhalt des Fachbereichs Design und Gaststudierende, die Technik zu Zwecken des Studiums, der Forschung und des Transfers nutzen. Die Nutzerin bzw. der Nutzer übernimmt die uneingeschränkte Haftung für die Geräte.  Weitere Informationen zu Nutzungsbedingungen sind in der Nutzungsordnung zu finden.</p>
-  </div>
+  </div> <div class="detail_text">
+    <h3>Beratung</h3>
+    Du benötigst für eines deiner Projekte in Kürze Technik, dann vereinbare mit uns einen BEratungstermin und wir finden zusammen heraus, wie wir dir helfen können<br>
+           <br><br>
+    <button id="form-btn" style="background-color: #0E0C77; color: white; border-radius: 25px; padding: 10px 20px; text-align: center; font-weight: bold; cursor: pointer;"> Beratungstermin anfragen </button>
+
+    <!-- Modal -->
+    <div class="modal_2">
+      <div class="modal-header_2">
+        <h2>Beratungsterminanfrage</h2>
+        <span class="close">&times;</span>
+      </div>
+      <!-- Modal-Inhalt -->
+      <p><iframe class="airtable-embed" src="https://airtable.com/embed/shrc3CKvuOxwJ9t0f?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></p>
+    </div>
   <div class="detail_text">
     <h3>Ausleihe</h3>
     Du weißt schon genau, welche Ausrüstung du benötigst und wann du sie brauchst? Dann lass uns jetzt in Kontakt treten! Fülle einfach unser Formular aus und lass uns dir dabei helfen, dein Vorhaben zu realisieren. <br>
