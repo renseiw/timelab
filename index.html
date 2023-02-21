@@ -56,8 +56,14 @@ body {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Add a gradient background that fades to transparent at the bottom */
   z-index: 1001; /* Set the z-index of the modal header to 1001 so that it appears above other elements in the modal */
 }
-
-        /* Styling for the modal */
+        
+/* Styling for the close button in the modal header */
+.close {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+        /* Styling for the modal 2 */
 .modal_2 {
   display: none; /* Hide the modal by default */
   position: absolute; /* Set the position of the modal to absolute */
@@ -75,7 +81,7 @@ body {
 }
 
 
-/* Styling for the modal header */
+/* Styling for the modal header 2 */
 .modal-header_2 {
   position: sticky; /* Stick the modal header to the top of the modal */
   top: 0;
@@ -87,8 +93,8 @@ body {
   z-index: 1001; /* Set the z-index of the modal header to 1001 so that it appears above other elements in the modal */
 }
 
-/* Styling for the close button in the modal header */
-.close {
+/* Styling for the close button in the modal header 2 */
+.close_2 {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -197,24 +203,24 @@ body {
     <p>Ausleihberechtigt sind alle Studierenden und Mitarbeitenden der Hochschule Anhalt des Fachbereichs Design und Gaststudierende, die Technik zu Zwecken des Studiums, der Forschung und des Transfers nutzen. Die Nutzerin bzw. der Nutzer übernimmt die uneingeschränkte Haftung für die Geräte.  Weitere Informationen zu Nutzungsbedingungen sind in der Nutzungsordnung zu finden.</p>
   </div> <div class="detail_text">
     <h3>Beratung</h3>
-    Du benötigst für eines deiner Projekte in Kürze Technik, dann vereinbare mit uns einen BEratungstermin und wir finden zusammen heraus, wie wir dir helfen können<br>
+    Du benötigst für eines deiner Projekte in Kürze Technik, dann vereinbare mit uns einen Beratungstermin und wir finden zusammen heraus, wie wir dir helfen können<br>
            <br><br>
-    <button id="form-btn" style="background-color: #0E0C77; color: white; border-radius: 25px; padding: 10px 20px; text-align: center; font-weight: bold; cursor: pointer;"> Beratungstermin anfragen </button>
+    <button id="form-btn" style="background-color: #0E0C77; color: white; border-radius: 25px; padding: 10px 20px; text-align: center; font-weight: bold; cursor: pointer;" data-toggle="modal" data-target="#modal_2">Beratungstermin anfragen </button>
 
     <!-- Modal -->
     <div class="modal_2">
       <div class="modal-header_2">
         <h2>Beratungsterminanfrage</h2>
-        <span class="close">&times;</span>
+        <span class="close_2">&times;</span>
       </div>
       <!-- Modal-Inhalt -->
       <p><iframe class="airtable-embed" src="https://airtable.com/embed/shrc3CKvuOxwJ9t0f?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></p>
     </div>
   <div class="detail_text">
     <h3>Ausleihe</h3>
-    Du weißt schon genau, welche Ausrüstung du benötigst und wann du sie brauchst? Dann lass uns jetzt in Kontakt treten! Fülle einfach unser Formular aus und lass uns dir dabei helfen, dein Vorhaben zu realisieren. <br>
+    Du weißt schon genau, welche Ausrüstung du benötigst und wann du sie brauchst? Dann füll einfach unser Formular aus und lass uns dir dabei helfen, dein Vorhaben zu realisieren. <br>
            <br><br>
-    <button id="form-btn" style="background-color: #0E0C77; color: white; border-radius: 25px; padding: 10px 20px; text-align: center; font-weight: bold; cursor: pointer;"> Zum Ausleihformular </button>
+    <button id="form-btn" style="background-color: #0E0C77; color: white; border-radius: 25px; padding: 10px 20px; text-align: center; font-weight: bold; cursor: pointer;" data-toggle="modal" data-target="#modal">Zum Ausleihformular </button>
 
     <!-- Modal -->
     <div class="modal">
